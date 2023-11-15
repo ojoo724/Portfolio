@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 65px;
+    height: 80px;
     width: 100%;
     padding: 0 45px;
     z-index: 20;
@@ -49,7 +49,7 @@
     }
   }
   .header >h1{
-      font-size: 24px;
+      font-size: 35px;
   }
   
   .hamburger {
@@ -62,7 +62,7 @@
   
   .hamburger span {
     display: inline-block;
-    height: 2px;
+    height: 4px;
     width: 30px;
     background-color: #000;
     margin-bottom: 10px;
@@ -92,7 +92,7 @@
     overflow: hidden;
     height: 0%;
     width: 100%;
-    background-color: rgba(160, 169, 169, 0.9);
+    background-color: #9DA5A2;
     z-index: 9;
   }
   
@@ -104,7 +104,7 @@
     left: 0;
     height: 0%;
     width: 100%;
-    background-color: hsla(162, 71%, 74%, 0.7);
+    background-color: #60CAAD;
     z-index: 2;
   }
   
@@ -112,22 +112,21 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    max-width: 1140px;
+    max-width: 1300px;
     height: 100%;
     min-height: 100vh;
-    padding: 120px 0;
+    padding: 40px 0;
     margin: 0 auto;
-    color: hsl(210, 37%, 96%);
+    color: #ffffff;
   }
   
   .nav__right {
     max-width: 300px;
     text-align: right;
-    padding-right: 45px;
   }
   
   .nav__links {
-    font-size: 50px;
+    font-size: 65px;
     font-family: 'Ageo Bold';
     line-height: 1;
     margin-bottom: 30px;
@@ -142,7 +141,7 @@
   }
   
   .nav__links a:hover {
-    color: hsl(162, 72%, 74%);
+    color: #60CAAD;
   }
   
   .nav__text h3 {
@@ -158,32 +157,35 @@
   }
   
   .nav__locations > i {
-    margin-left: 24px;
+    margin-left: 25px;
   }
   
   .main{
     padding-top: 65px;
     height: 1000px;
-    background-color: #ffffff;
   }
 
-  #originalDiv {
-    width: 100%;
-    height: 100vh;
-    background-color: lightblue;
+  main {
+    transition: all 0.5s;
+    -webkit-text-stroke: 5px #444444;
+    font-variation-settings: "wght" 900, "ital" 1;
+    font-size: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: transparent;
+    font-family: "Meta", sans-serif;
+    text-shadow: 10px 10px 0px #E0E4D6,
+      15px 15px 0px #60CAAD,
+      20px 20px 5px #9DA5A2,
+      35px 35px 10px #444444;
+    cursor: pointer;
   }
-
-  #newDiv {
-    width: 100%;
-    height: 100vh;
-    background-color: lightcoral;
-    position: absolute;
-    top: 100vh; /* 기존 div 아래에 위치 */
-    opacity: 0; /* 처음에는 투명하게 설정 */
-  }
-
-
   
+  main:hover {
+    font-variation-settings: "wght" 100, "ital" 0;
+    text-shadow: none;
+  }
+
   .blog-slider {
     width: 95%;
     position: relative;
